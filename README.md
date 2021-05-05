@@ -1,3 +1,11 @@
+**Fork Note:** This fork uses an alternative parsing function, which adds the following changes:
+
+- `#` (with preceding space) starts a comment anywhere on the line (e.g. `KEY=VALUE # a comment`)
+- Quote-enclosed whitespace doesn't get trimmed (e.g. `INDENTED='  retained'`)
+- Some additional edge-case tests
+
+AFAIK it passes all existing tests.
+
 # dotenv-flow
 
 <img src="https://raw.githubusercontent.com/kerimdzhanov/dotenv-flow/master/dotenv-flow@2x.png" alt="dotenv-flow" width="280" height="140" align="right" />
